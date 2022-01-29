@@ -1,0 +1,35 @@
+.header {
+  position: relative;
+  display: flex;
+  padding-top: 41px;
+  padding-bottom: 65px;
+
+  &-nav {
+    display: flex;
+    margin-bottom: 49px;
+    align-items: flex-end;
+  }
+
+  &__home-link {
+     @extend %link;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+  
+    &-text {
+      display: none;
+
+      @media screen and (min-width: 768px) {
+        display: flex;
+        font-family: $font-raleway;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        color: #ffffff;
+        margin-left: 10px;
+        align-items: center;
+      }
+    }
+  }
+}

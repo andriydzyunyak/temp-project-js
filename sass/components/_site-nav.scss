@@ -1,0 +1,36 @@
+.site-nav {
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+
+  &__item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 38px;
+    }
+  }
+
+  &__link {
+    @extend %link;
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--current::after {
+      content: '';
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      bottom: -3px;
+      left: 0;
+      background-color: #FF6B08;
+      border: 2px solid #FF6B08;
+    }
+}
+}

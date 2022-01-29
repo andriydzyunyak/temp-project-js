@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Filmoteka</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header-nav">
+          <a class="header__home-link link" href="./" lang="en" target="_self">
+            <svg
+              class="home-link__icon"
+              id="header-home-link"
+              width="24"
+              height="24"
+            >
+              <use href="./images/symbol-defs.svg#icon-logo"></use>
+            </svg>
+            <span class="header__home-link-text">Filmoteka</span>
+          </a>
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a class="site-nav__link link" href="./" target="_self">HOME</a>
+            </li>
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--current link"
+                href="./"
+                target="_self"
+                >MY LIBRARY</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="button-list">
+          <button class="button-list__button btn" type="button">WATCHED</button>
+          <button class="button-list__button btn" type="button">QUEUE</button>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
